@@ -1,10 +1,141 @@
-:root, ::before, ::after {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  --primary-background-color: rgba(175, 150, 150, 0.7);
-  --primary-font-color: #2d0347;
-  --secondary-font-color: rgb(155, 135, 135); 
-  --primary-card-color: #f9e8e8;
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 0.5rem;
+  color: #6e0608;
+}
+
+.header-content p{
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 1000;
+  margin: 1rem;
+}
+
+.cards-count {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.container {
+  width: 95%;
+  margin: 1rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.card-content, .hint-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(154, 25, 25, 0.3);
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+
+.card-content.bluish-bg {
+  background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+}
+
+.card-content.orangish-bg {
+  background: linear-gradient(90deg, hsla(51, 89%, 61%, 1) 0%, hsla(25, 83%, 57%, 1) 100%);
+}
+
+.card-content.reddish-bg {
+  background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+}
+
+.card-content.whitish-bg {
+  background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+}
+
+.card-content:hover{
+  transform: translateY(-10px);
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.2s;
+}
+
+.container p {
+  line-height: 1.75rem;
+  max-height: 10%;
+  text-overflow: hidden;
+  margin: 0;
+  font-weight: 600;
+}
+
+.buzz-content {
+  color: rgb(65, 52, 93);
+}
+
+.fact-content {
+  color: rgb(178, 38, 38);
+}
+
+.hint-content {
+  color: #e0e0f4;
+  font-size: 1.05rem;
+  min-width: 50vw;
+  visibility: hidden;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 0;
+  background: linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%);
+}
+
+.hint-content.active {
+  visibility: visible;
+}
+
+.hint-content span{
+  color: yellow;
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+}
+
+.buttons {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 1.15rem;
+  width: 100px;
+  padding: 0.65rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+button:hover{
+  background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, rgb(90, 121, 132) 100%);
 }
 
