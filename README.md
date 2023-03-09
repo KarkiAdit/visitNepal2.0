@@ -4,7 +4,7 @@ Submitted by: **Aditya Karki**
 
 This web app: **A flashchard app for demonstrating famous facts about Nepal, my country. It uses two state variables and two components to construct all the functionality**
 
-Time spent: **3.5** hours spent in total
+Time spent: **5.5** hours spent in total
 
 ## Required Features
 
@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-https://user-images.githubusercontent.com/68220732/223928985-f00db090-d943-4ec2-9ce8-cba113d3734a.mp4
+https://user-images.githubusercontent.com/68220732/223931062-a8d315de-58de-4dcf-b267-414add2bd325.mp4
 
 Video created using Wondershare and Imgur.
 
