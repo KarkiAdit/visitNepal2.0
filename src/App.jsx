@@ -48,7 +48,7 @@ function App() {
     hint: "British never ruled Nepal only captured some places of it."}
 ];
   // keeps track of current content showed in the card
-  const [currentData, setCurrentData] = useState({buzz: data[0].buzz, fact: data[0].fact});
+  const [currentData, setCurrentData] = useState(data[0]);
   // indicator to showing a buzz or fact
   const [showBuzz, setShowBuzz] = useState(true);
   // indicater to showing hint or not
