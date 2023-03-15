@@ -1,38 +1,37 @@
-# Web Development Project 2 - *Visit Nepal*
+# Web Development Project 2 - *Visit Nepal Quiz 2.0*
 
 Submitted by: **Aditya Karki**
 
-This web app: **A flashchard app for demonstrating famous facts about Nepal, my country. It uses two state variables and two components to construct all the functionality**
+This web app: **A flashchard app for taking quiz of some famous facts about Nepal. It uses ten state variables and six components to construct all the functionality which covers features like inputing user responses, validating correct answers, navigating bewtween questions, suffling questions, hints for a question, and adding mastered questions.**
 
-Time spent: **5.5** hours spent in total
+Time spent: **11.5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [ ] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [ ] **A list of card pairs is created**
-- [ ] **Clicking on the card shows the corresponding component of the information pair**
-- [ ] **Clicking the next button displays a random new card**
+- [ ] **The user can enter their guess in a box before seeing the flipside of the card**
+- [ ] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [ ] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [ ] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [ ] Card contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-  - [ ] Separate background color property was added to each buzz based on the buzz difficulty
+- [ ] A shuffle button is used to randomize the order of the cards
+- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer (using substring concept)
+- [ ] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and added to a list of mastered cards
 
 The following **additional** features are implemented:
 
-* [ ] Data context management was done using three state variables and three components
-* [ ] Easy, Medium, and Hard difficulty buzz was created and addressed using toggle classes feature
-* [ ] A hint button was addded. It helped a prospective viewer give some tips into answering the buzz
+* [ ] Mastered questions were removed from the question set; navigation buttons were tailored such that their state changed and pointed to previous/next question without compromising on the current pattern of questions
+* [ ] Easy, Medium, and Hard difficulty were visually showed and addressed using toggle classes feature
+* [ ] For sleek visual, modal elements were implemented to show question validation info and mastered questions info 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
-
-https://user-images.githubusercontent.com/68220732/223931062-a8d315de-58de-4dcf-b267-414add2bd325.mp4
+[Video URL:](https://imgur.com/a/qJPv7d1)
 
 Video created using Wondershare and Imgur.
 
