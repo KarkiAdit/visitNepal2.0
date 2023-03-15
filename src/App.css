@@ -6,6 +6,29 @@
   align-items: center;
   justify-content: center;
   margin: 1rem;
+  position: relative;
+}
+
+.overlay {
+  visibility: hidden;
+  display: none;
+  z-index: -90000;
+  position: absolute;
+  width: 90%;
+  height: 95%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b6b6bd;
+  border-radius: 60px;
+  font-size: 1.75rem;
+}
+
+.overlay.active {
+  visibility: inherit;
+  display: flex;
+  z-index: 10000;
 }
 
 .header-content h1 {
@@ -13,19 +36,19 @@
   text-align: center;
   font-weight: bold;
   margin: 0.5rem;
-  color: #6e0608;
+  color: rgb(65, 52, 93);
 }
 
 .header-content p{
   text-align: center;
   font-size: 2rem;
-  color: #ffffff;
+  color: whitesmoke;
   font-weight: 1000;
   margin: 1rem;
 }
 
 .cards-count {
-  color: whitesmoke;
+  color: rgb(65, 52, 93);
   font-weight: bold;
   font-size: 1.25rem;
   margin: 0;
@@ -33,6 +56,7 @@
 
 .container {
   width: 95%;
+  min-width: 300px;
   margin: 1rem auto;
   padding: 2rem;
   display: flex;
@@ -41,6 +65,7 @@
   justify-content: center;
   flex-wrap: wrap;
   cursor: pointer;
+  position: relative;
 }
 
 .card-content, .hint-content {
@@ -75,6 +100,18 @@
   transform: translateY(-10px);
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
   transition: all ease 0.2s;
+}
+
+.card-content.container span {
+  color: rgb(31, 85, 34);
+  font-weight: bold;
+  font-size: 0.85rem;
+  position: absolute;
+  left: 1rem;
+}
+.container hr{
+  color: black;
+  width: 25%;
 }
 
 .container p {
@@ -116,26 +153,76 @@
 }
 
 .buttons {
-  width: 60%;
+  max-width: 60%;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 button {
-  font-size: 1.15rem;
+  font-size: 1rem;
   width: 100px;
-  padding: 0.65rem;
-  color: #ffffff;
-  background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+  padding: 0.3rem;
+  color: rgb(65, 52, 93);
+  background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  font-family: inherit;
+  margin: 1rem;
+  border: 0;
+}
+
+button:hover, .form-submit:hover{
+  background: rgba(0, 0, 0, 0.4);
+  color: rgb(211, 223, 239);
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  padding: 0.8rem;
+  border-radius: 3px;
+}
+
+.form-container label {
+  margin-right: 0.5rem;
+  color:rgb(65, 52, 93);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-text {
+  all: unset;
+  padding: 0.5rem;
+  border: 1.5px solid rgb(143, 143, 153);
+  border-radius: 7px;
   margin: 1rem;
 }
 
-button:hover{
-  background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, rgb(90, 121, 132) 100%);
+.form-submit {
+  all: unset;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  background: linear-gradient(90deg, rgb(216, 190, 226) 0%, hsla(186, 100%, 69%, 1) 100%);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+  border: 1px solid rgb(143, 143, 153);
+}
+
+.overlay .mastered-info {
+  padding: 2rem;
+  font-size: 1.25rem;
+}
+
+.overlay span {
+  font-weight: bold;
+  margin-right: 1rem;
 }
 
