@@ -15,7 +15,7 @@ const Card = (props) => {
     }
     return (
             <div className={cardClassName}>
-                <div><span>{props.content.difficulty.toUpperCase()}</span> Question. {props.qnNumber + 1}</div>
+                <div><span>{props.content.difficulty.toUpperCase()}</span> Question {props.qnNumber + 1}</div>
                 <hr />
                 {(props.dataPicker ? <p className="buzz-content">{props.content.buzz}</p> : <p className="fact-content">{props.content.fact}</p>)}
             </div>);
