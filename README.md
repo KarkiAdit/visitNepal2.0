@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
-[Video URL:](https://imgur.com/a/qJPv7d1)
+[Video URL](https://imgur.com/a/qJPv7d1)
 
 Video created using Wondershare and Imgur.
 
