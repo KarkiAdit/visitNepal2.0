@@ -1,4 +1,4 @@
-# Web Development Project 2 - *Visit Nepal Quiz 2.0*
+# Web Development Project 2/3 - *Visit Nepal Quiz 2.0*
 
 Submitted by: **Aditya Karki**
 
