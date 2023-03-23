@@ -22,8 +22,6 @@ The following **optional** features are implemented:
 - [ ] A counter displays the user's current and longest streak of correct responses
 - [ ] A user can mark a card that they have mastered and added to a list of mastered cards
 
-https://user-images.githubusercontent.com/68220732/227085886-748cb49a-6e23-4945-bed5-07867dac698f.mp4
-
 
 
 The following **additional** features are implemented:
